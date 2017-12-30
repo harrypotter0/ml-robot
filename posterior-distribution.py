@@ -1,13 +1,18 @@
 p=[0.2,0.2,0.2,0.2,0.2]
+world=['green','red','red','green','green','green']
+Z='red'
 pHit = 0.6
 pMiss = 0.2
 
-p[0]=p[0]*pMiss
-p[1]=p[1]*pHit
-p[2]=p[2]*pHit
-p[3]=p[3]*pMiss
-p[4]=p[4]*pMiss
+def sense(p,Z):
+    q=[]
+    for i in range(len(p)):
+        hit = (Z==world[i])
+        q.append(p[i]*(hit*pHit+(1-hit)*pMiss))
+    s = sum(q)
+    for i in range(len(p)):
+        q[i] = q[i]/s
+    return q
 
-print p
 
-print sum(p)
+print sense(p,Z)
