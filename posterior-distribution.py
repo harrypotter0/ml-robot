@@ -1,3 +1,16 @@
+'''
+Belief = Probability
+Sense = Product followed by Normalization
+Move = Convolution ( Addition )
+
+Normalization :: EP(Xi)=1
+0<=P(X)<=1
+P(X1)=0.2 , P(X2)=0.8
+
+Bayes' Rule ::
+X = grid cells Z= measurements
+p(X|z) = (p(Z/X)p(X))/p(Z)
+'''
 p=[0.2,0.2,0.2,0.2,0.2]
 world=['green','red','red','green','green','green']
 measurements = ['red','red']
