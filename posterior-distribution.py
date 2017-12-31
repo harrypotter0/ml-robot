@@ -1,7 +1,8 @@
 '''
 Belief = Probability
-Sense = Product followed by Normalization
-Move = Convolution ( Addition )
+
+measurement = Bayes Rule = Sense = Product followed by Normalization
+motion = Total Probability= Move = Convolution ( Addition )
 
 Normalization :: EP(Xi)=1
 0<=P(X)<=1
