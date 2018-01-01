@@ -12,6 +12,7 @@ Bayes' Rule ::
 X = grid cells Z= measurements
 p(X|Z) = (p(Z/X)p(X))/p(Z)
 '''
+
 p=[0.2,0.2,0.2,0.2,0.2]
 world=['green','red','red','green','green','green']
 measurements = ['red','red']
